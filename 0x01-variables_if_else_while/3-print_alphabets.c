@@ -8,20 +8,13 @@
 
 int main(void)
 {
-	int lowerCase = 'a';
+	char alp[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
 
-	while (lowerCase <= 'z')
+	for (i = 0; i < 52; i++)
 	{
-		if (lowerCase == 'e' || lowerCase == 'q')
-	{
-		lowerCase += 1;
+	putchar(alp[i]);
 	}
-		else
-	{
-		putchar(lowerCase);
-		lowerCase += 1;
-	}
-	}
-		putchar('\n');
-		return (0);
+	putchar('\n');
+	return (0);
 }
